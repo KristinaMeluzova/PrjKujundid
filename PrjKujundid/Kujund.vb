@@ -23,6 +23,6 @@ Public MustInherit Class Kujund
     'Abstraktne funktsioon kujundi ümbernõõdu arvutamiseks
     Public MustOverride Function leiaYmberMoot() As Double
 
-    'Abstraktne funktsioon kujundi ümbernõõdu arvutamiseks
+    'Abstraktne funktsioon kujundi pindala arvutamiseks
     Public MustOverride Function leiaPindala() As Double
 End Class
