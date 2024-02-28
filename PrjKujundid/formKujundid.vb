@@ -28,4 +28,9 @@
         'Aga saab ka nii...Otsene väljakutse meetodil tootleKujund
         tootleKujund(New Ristkülik(txtKylgA.Text, txtKylgB.Text))
     End Sub
+
+    Private Sub cmbTapsus_SelectedIndexChanged(sender As System.Object, e As System.EventArgs) _
+        Handles cmbTapsus.SelectedIndexChanged
+
+    End Sub
 End Class

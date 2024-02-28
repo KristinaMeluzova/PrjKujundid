@@ -38,6 +38,8 @@ Partial Class formKujundid
         Me.btnKolmnurk = New System.Windows.Forms.Button()
         Me.btnRuut = New System.Windows.Forms.Button()
         Me.btnRistkylik = New System.Windows.Forms.Button()
+        Me.Label7 = New System.Windows.Forms.Label()
+        Me.cmbTapsus = New System.Windows.Forms.ComboBox()
         Me.Kujundid.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -129,6 +131,7 @@ Partial Class formKujundid
         '
         'txtYmbermoot
         '
+        Me.txtYmbermoot.Enabled = False
         Me.txtYmbermoot.Location = New System.Drawing.Point(180, 311)
         Me.txtYmbermoot.Name = "txtYmbermoot"
         Me.txtYmbermoot.Size = New System.Drawing.Size(100, 20)
@@ -136,6 +139,7 @@ Partial Class formKujundid
         '
         'txtPindala
         '
+        Me.txtPindala.Enabled = False
         Me.txtPindala.Location = New System.Drawing.Point(180, 343)
         Me.txtPindala.Name = "txtPindala"
         Me.txtPindala.Size = New System.Drawing.Size(100, 20)
@@ -180,11 +184,31 @@ Partial Class formKujundid
         Me.btnRistkylik.Text = "Ristkülik"
         Me.btnRistkylik.UseVisualStyleBackColor = True
         '
+        'Label7
+        '
+        Me.Label7.AutoSize = True
+        Me.Label7.Location = New System.Drawing.Point(12, 208)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(42, 13)
+        Me.Label7.TabIndex = 13
+        Me.Label7.Text = "Täpsus"
+        '
+        'cmbTapsus
+        '
+        Me.cmbTapsus.FormattingEnabled = True
+        Me.cmbTapsus.Items.AddRange(New Object() {"0", "1", "2", "3"})
+        Me.cmbTapsus.Location = New System.Drawing.Point(60, 205)
+        Me.cmbTapsus.Name = "cmbTapsus"
+        Me.cmbTapsus.Size = New System.Drawing.Size(121, 21)
+        Me.cmbTapsus.TabIndex = 14
+        '
         'formKujundid
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.cmbTapsus)
+        Me.Controls.Add(Me.Label7)
         Me.Controls.Add(Me.txtPindala)
         Me.Controls.Add(Me.txtYmbermoot)
         Me.Controls.Add(Me.Label6)
@@ -223,4 +247,6 @@ Partial Class formKujundid
     Friend WithEvents btnRistkylik As Button
     Friend WithEvents btnRuut As Button
     Friend WithEvents btnKolmnurk As Button
+    Friend WithEvents Label7 As Label
+    Friend WithEvents cmbTapsus As ComboBox
 End Class
