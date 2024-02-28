@@ -131,7 +131,9 @@ Partial Class formKujundid
         '
         'txtYmbermoot
         '
+        Me.txtYmbermoot.BackColor = System.Drawing.SystemColors.Window
         Me.txtYmbermoot.Enabled = False
+        Me.txtYmbermoot.ForeColor = System.Drawing.SystemColors.WindowText
         Me.txtYmbermoot.Location = New System.Drawing.Point(180, 311)
         Me.txtYmbermoot.Name = "txtYmbermoot"
         Me.txtYmbermoot.Size = New System.Drawing.Size(100, 20)
@@ -139,7 +141,9 @@ Partial Class formKujundid
         '
         'txtPindala
         '
+        Me.txtPindala.BackColor = System.Drawing.SystemColors.Window
         Me.txtPindala.Enabled = False
+        Me.txtPindala.ForeColor = System.Drawing.SystemColors.WindowText
         Me.txtPindala.Location = New System.Drawing.Point(180, 343)
         Me.txtPindala.Name = "txtPindala"
         Me.txtPindala.Size = New System.Drawing.Size(100, 20)

@@ -1,5 +1,7 @@
 ﻿Public Class formKujundid
 
+    Dim Tapsus As Double
+
     Private Sub tootleKujund(ByRef kujund As Kujund)
         'kujundi tüübi väljastamine
         lblTyyp.Text = kujund.annaTyyp
@@ -31,6 +33,15 @@
 
     Private Sub cmbTapsus_SelectedIndexChanged(sender As System.Object, e As System.EventArgs) _
         Handles cmbTapsus.SelectedIndexChanged
-
+        Select Case cmbTapsus.SelectedIndex
+            Case (0)
+                Tapsus = "0"
+            Case (1)
+                Tapsus = "0.0"
+            Case (2)
+                Tapsus = "0.00"
+            Case (3)
+                Tapsus = "0.000"
+        End Select
     End Sub
 End Class
