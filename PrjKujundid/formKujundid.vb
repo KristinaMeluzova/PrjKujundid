@@ -18,22 +18,40 @@
 
     Private Sub btnKolmnurk_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) _
         Handles btnKolmnurk.Click
-        'Objekt kolmnurga klassist
-        Dim objektKolmnurk As New Kolmnurk(txtKylgA.Text, txtKylgB.Text)
-        tootleKujund(objektKolmnurk)
+        'See tingimus on tehtud juhul kui txtKylgA või txtKylgB on tühi
+        If (String.IsNullOrEmpty(txtKylgA.Text) OrElse String.IsNullOrEmpty(txtKylgB.Text)) Then
+            txtPindala.Text = 0
+            txtYmbermoot.Text = 0
+        Else
+            'Objekt kolmnurga klassist
+            Dim objektKolmnurk As New Kolmnurk(txtKylgA.Text, txtKylgB.Text)
+            tootleKujund(objektKolmnurk)
+        End If
     End Sub
 
     Private Sub btnRuut_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) _
         Handles btnRuut.Click
-        'Objekt ruudu klassist
-        Dim objektRuut As New Ruut(txtKylgA.Text)
-        tootleKujund(objektRuut)
+        'See tingimus on tehtud juhul kui txtKylgA on tühi
+        If (String.IsNullOrEmpty(txtKylgA.Text)) Then
+            txtPindala.Text = 0
+            txtYmbermoot.Text = 0
+        Else
+            'Objekt ruudu klassist
+            Dim objektRuut As New Ruut(txtKylgA.Text)
+            tootleKujund(objektRuut)
+        End If
     End Sub
 
     Private Sub btnRistkylik_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) _
         Handles btnRistkylik.Click
-        'Aga saab ka nii...Otsene väljakutse meetodil tootleKujund
-        tootleKujund(New Ristkülik(txtKylgA.Text, txtKylgB.Text))
+        'See tingimus on tehtud juhul kui txtKylgA või txtKylgB on tühi
+        If (String.IsNullOrEmpty(txtKylgA.Text) OrElse String.IsNullOrEmpty(txtKylgB.Text)) Then
+            txtPindala.Text = 0
+            txtYmbermoot.Text = 0
+        Else
+            'Aga saab ka nii...Otsene väljakutse meetodil tootleKujund
+            tootleKujund(New Ristkülik(txtKylgA.Text, txtKylgB.Text))
+        End If
     End Sub
 
     Private Sub cmbTapsus_SelectedIndexChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) _
@@ -51,13 +69,25 @@
     End Sub
     Private Sub btnRoopkulik_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) _
         Handles btnRoopkulik.Click
-        tootleKujund(New Rööpkülik(txtKylgA.Text, txtKylgB.Text, txtKorgus.Text))
+        'See tingimus on tehtud juhul kui txtKylgA või txtKylgB või txtKorgus(kõrgus) on tühi
+        If (String.IsNullOrEmpty(txtKylgA.Text) OrElse String.IsNullOrEmpty(txtKylgB.Text) OrElse String.IsNullOrEmpty(txtKorgus.Text)) Then
+            txtPindala.Text = 0
+            txtYmbermoot.Text = 0
+        Else
+            tootleKujund(New Rööpkülik(txtKylgA.Text, txtKylgB.Text, txtKorgus.Text))
+        End If
     End Sub
 
     Private Sub bntRomb_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) _
         Handles bntRomb.Click
-        'Objekt ruudu klassist
-        Dim objektRomb As New Romb(txtKylgA.Text, txtKorgus.Text)
-        tootleKujund(objektRomb)
+        'See tingimus on tehtud juhul kui txtKylgA või txtKoorgus on tühi
+        If (String.IsNullOrEmpty(txtKylgA.Text) OrElse String.IsNullOrEmpty(txtKorgus.Text)) Then
+            txtPindala.Text = 0
+            txtYmbermoot.Text = 0
+        Else
+            'Objekt ruudu klassist
+            Dim objektRomb As New Romb(txtKylgA.Text, txtKorgus.Text)
+            tootleKujund(objektRomb)
+        End If
     End Sub
 End Class
