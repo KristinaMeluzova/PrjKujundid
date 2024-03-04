@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class formKujundid
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class formKujundid
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.txtKylgB = New System.Windows.Forms.TextBox()
         Me.txtKylgA = New System.Windows.Forms.TextBox()
@@ -35,11 +35,16 @@ Partial Class formKujundid
         Me.txtYmbermoot = New System.Windows.Forms.TextBox()
         Me.txtPindala = New System.Windows.Forms.TextBox()
         Me.Kujundid = New System.Windows.Forms.GroupBox()
-        Me.btnKolmnurk = New System.Windows.Forms.Button()
-        Me.btnRuut = New System.Windows.Forms.Button()
+        Me.bntRomb = New System.Windows.Forms.Button()
+        Me.btnRoopkulik = New System.Windows.Forms.Button()
         Me.btnRistkylik = New System.Windows.Forms.Button()
+        Me.btnRuut = New System.Windows.Forms.Button()
+        Me.btnKolmnurk = New System.Windows.Forms.Button()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.cmbTapsus = New System.Windows.Forms.ComboBox()
+        Me.Label8 = New System.Windows.Forms.Label()
+        Me.txtKorgus = New System.Windows.Forms.TextBox()
+        Me.GroupBox1.SuspendLayout()
         Me.Kujundid.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -77,9 +82,11 @@ Partial Class formKujundid
         '
         'GroupBox1
         '
+        Me.GroupBox1.Controls.Add(Me.txtKorgus)
+        Me.GroupBox1.Controls.Add(Me.Label8)
         Me.GroupBox1.Location = New System.Drawing.Point(72, 91)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(180, 79)
+        Me.GroupBox1.Size = New System.Drawing.Size(180, 108)
         Me.GroupBox1.TabIndex = 4
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Algandmed"
@@ -151,24 +158,44 @@ Partial Class formKujundid
         '
         'Kujundid
         '
+        Me.Kujundid.Controls.Add(Me.bntRomb)
+        Me.Kujundid.Controls.Add(Me.btnRoopkulik)
         Me.Kujundid.Controls.Add(Me.btnRistkylik)
         Me.Kujundid.Controls.Add(Me.btnRuut)
         Me.Kujundid.Controls.Add(Me.btnKolmnurk)
         Me.Kujundid.Location = New System.Drawing.Point(449, 91)
         Me.Kujundid.Name = "Kujundid"
-        Me.Kujundid.Size = New System.Drawing.Size(251, 141)
+        Me.Kujundid.Size = New System.Drawing.Size(251, 201)
         Me.Kujundid.TabIndex = 12
         Me.Kujundid.TabStop = False
         Me.Kujundid.Text = "Kujundid"
         '
-        'btnKolmnurk
+        'bntRomb
         '
-        Me.btnKolmnurk.Location = New System.Drawing.Point(71, 28)
-        Me.btnKolmnurk.Name = "btnKolmnurk"
-        Me.btnKolmnurk.Size = New System.Drawing.Size(102, 22)
-        Me.btnKolmnurk.TabIndex = 13
-        Me.btnKolmnurk.Text = "Kolmnurk"
-        Me.btnKolmnurk.UseVisualStyleBackColor = True
+        Me.bntRomb.Location = New System.Drawing.Point(71, 152)
+        Me.bntRomb.Name = "bntRomb"
+        Me.bntRomb.Size = New System.Drawing.Size(102, 23)
+        Me.bntRomb.TabIndex = 16
+        Me.bntRomb.Text = "Romb"
+        Me.bntRomb.UseVisualStyleBackColor = True
+        '
+        'btnRoopkulik
+        '
+        Me.btnRoopkulik.Location = New System.Drawing.Point(71, 117)
+        Me.btnRoopkulik.Name = "btnRoopkulik"
+        Me.btnRoopkulik.Size = New System.Drawing.Size(102, 25)
+        Me.btnRoopkulik.TabIndex = 15
+        Me.btnRoopkulik.Text = "Rööpkülik"
+        Me.btnRoopkulik.UseVisualStyleBackColor = True
+        '
+        'btnRistkylik
+        '
+        Me.btnRistkylik.Location = New System.Drawing.Point(71, 85)
+        Me.btnRistkylik.Name = "btnRistkylik"
+        Me.btnRistkylik.Size = New System.Drawing.Size(102, 23)
+        Me.btnRistkylik.TabIndex = 13
+        Me.btnRistkylik.Text = "Ristkülik"
+        Me.btnRistkylik.UseVisualStyleBackColor = True
         '
         'btnRuut
         '
@@ -179,14 +206,14 @@ Partial Class formKujundid
         Me.btnRuut.Text = "Ruut"
         Me.btnRuut.UseVisualStyleBackColor = True
         '
-        'btnRistkylik
+        'btnKolmnurk
         '
-        Me.btnRistkylik.Location = New System.Drawing.Point(71, 85)
-        Me.btnRistkylik.Name = "btnRistkylik"
-        Me.btnRistkylik.Size = New System.Drawing.Size(102, 23)
-        Me.btnRistkylik.TabIndex = 13
-        Me.btnRistkylik.Text = "Ristkülik"
-        Me.btnRistkylik.UseVisualStyleBackColor = True
+        Me.btnKolmnurk.Location = New System.Drawing.Point(71, 28)
+        Me.btnKolmnurk.Name = "btnKolmnurk"
+        Me.btnKolmnurk.Size = New System.Drawing.Size(102, 22)
+        Me.btnKolmnurk.TabIndex = 13
+        Me.btnKolmnurk.Text = "Kolmnurk"
+        Me.btnKolmnurk.UseVisualStyleBackColor = True
         '
         'Label7
         '
@@ -205,6 +232,22 @@ Partial Class formKujundid
         Me.cmbTapsus.Name = "cmbTapsus"
         Me.cmbTapsus.Size = New System.Drawing.Size(121, 21)
         Me.cmbTapsus.TabIndex = 14
+        '
+        'Label8
+        '
+        Me.Label8.AutoSize = True
+        Me.Label8.Location = New System.Drawing.Point(16, 76)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(22, 13)
+        Me.Label8.TabIndex = 0
+        Me.Label8.Text = "h ="
+        '
+        'txtKorgus
+        '
+        Me.txtKorgus.Location = New System.Drawing.Point(44, 73)
+        Me.txtKorgus.Name = "txtKorgus"
+        Me.txtKorgus.Size = New System.Drawing.Size(100, 20)
+        Me.txtKorgus.TabIndex = 15
         '
         'formKujundid
         '
@@ -229,6 +272,8 @@ Partial Class formKujundid
         Me.Name = "formKujundid"
         Me.RightToLeftLayout = True
         Me.Text = "Kujundid"
+        Me.GroupBox1.ResumeLayout(False)
+        Me.GroupBox1.PerformLayout()
         Me.Kujundid.ResumeLayout(False)
         Me.ResumeLayout(False)
         Me.PerformLayout()
@@ -253,4 +298,8 @@ Partial Class formKujundid
     Friend WithEvents btnKolmnurk As Button
     Friend WithEvents Label7 As Label
     Friend WithEvents cmbTapsus As ComboBox
+    Friend WithEvents btnRoopkulik As Button
+    Friend WithEvents bntRomb As Button
+    Friend WithEvents Label8 As Label
+    Friend WithEvents txtKorgus As TextBox
 End Class

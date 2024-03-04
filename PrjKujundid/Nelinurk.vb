@@ -2,7 +2,6 @@
     Inherits Kujund
 
     Protected kylgD As Double
-
     'Konstruktor atribuutide algväärtustamiseks
     'ning klassi atribuudi kylgD väärtustamiseks
     Public Sub New(ByVal tyyp As String, ByVal kylgA As Double,
